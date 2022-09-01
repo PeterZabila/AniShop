@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Roboto',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +10,104 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1140px;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.parallax {
+  position: relative;
+  height: 100%;
+}
+
+.parallax__mountain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.parallax__mountain_1 {
+  background: url('../public/images/m_1.png') 0 0 / cover no-repeat;
+}
+
+.parallax__mountain_2 {
+  z-index: 2;
+  background: url('../public/images/m_2.png') bottom right / 45% no-repeat;
+}
+
+.parallax__mountain_3 {
+  z-index: 2;
+  background: url('../public/images/m_3.png') left bottom / 100% no-repeat;
+}
+
+.parallax__fog {
+  z-index: 2;
+  background: url('../public/images/fog_1.png') bottom / 100% no-repeat;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.content {
+  position: relative;
+}
+
+.content__body {
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.content__header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+}
+
+.content__title {
+  font-size: 80px;
+}
+
+.content__subtitle {
+  font-size: 50px;
+}
+
+.content__article {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.content__article p {
+  margin-bottom: 20px;
 }
